@@ -22,7 +22,7 @@ function adicionarLinha() {
     let notaAtividade = Number(document.getElementById("nota").value)
     
     if (nomes.includes(atividade.value.replace(/\s+/g, ' ').trim().toLowerCase())) {
-        alert('Atividade já cadastrada.');
+        alert(`Atividade ${atividade.value} já cadastrada.`);
         return;
     }
 
