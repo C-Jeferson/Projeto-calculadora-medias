@@ -29,7 +29,7 @@ function adicionarLinha() {
     let linha = '<tr>'
     linha += `<td>${atividade.value}</td>`
     linha += `<td>${notaAtividade}</td>`
-    linha += `<td>${notaAtividade >= 7 ? fotoAprovado : fotoReprovado }</td>`
+    linha += `<td>${notaAtividade >= mediaMinima ? fotoAprovado : fotoReprovado }</td>`
 
     linhas += linha
 
